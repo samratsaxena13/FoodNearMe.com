@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <title>FoodNearMe.com</title>
+    </head>
+    <body>
+        <h1 id="page-title">&#127828;&#127865;&nbsp;F<span class="title-small">OOD</span>N<span class="title-small">EAR</span>M<span class="title-small">E<span class="title-smaller">.COM</span></span>&nbsp;&#127848;&#127850;</h1>
+        <h2 class="food-hint">What would you like?</h2>
+        <input class="check" type="checkbox" id="C-burger">
+            <label class="item main-item" for="C-burger" id="burger"></label>
+        <input class="check" type="checkbox" id="C-potato-fries">
+            <label class="item main-item" for="C-potato-fries" id="potato-fries"></label>
+        <input class="check" type="checkbox" id="C-ramen">
+            <label class="item main-item" for="C-ramen" id="ramen"></label>
+        <input class="check" type="checkbox" id="C-fried-chicken">
+            <label class="item main-item" for="C-fried-chicken" id="fried-chicken"></label>
+        <input class="check" type="checkbox" id="C-pizza">
+            <label class="item main-item" for="C-pizza" id="pizza"></label>
+        <div class="main-shelf"></div>
+            
+        <input class="check" type="checkbox" id="C-cake">
+            <label class="item main-item" for="C-cake" id="cake"></label>
+        <input class="check" type="checkbox" id="C-cookies">
+            <label class="item main-item" for="C-cookies" id="cookies"></label>
+        <input class="check" type="checkbox" id="C-ice-cream">
+            <label class="item main-item" for="C-ice-cream" id="ice-cream"></label>
+        <input class="check" type="checkbox" id="C-donut">
+            <label class="item main-item" for="C-donut" id="donut"></label>
+        <div class="main-shelf"></div>
+        
+        <input class="check" type="checkbox" id="C-fruit-juice">
+            <label class="item main-item" for="C-fruit-juice" id="fruit-juice"></label>
+        <input class="check" type="checkbox" id="C-milkshake">
+            <label class="item main-item" for="C-milkshake" id="milkshake"></label>
+        <input class="check" type="checkbox" id="C-coffee">
+            <label class="item main-item" for="C-coffee" id="coffee"></label>
+        <div class="main-shelf"></div>
+        
+        <h2 class="food-hint">Choose food above to display list of restaurants below!</h2><br><br>
+        
+        <div class="restaurant burger potato-fries milkshake">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample1.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Burger Bros.</h1>
+                <h3 class="rest-caption">"Best burgers and fries in town!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="burger"></label>
+                    <label class="item display-item" id="potato-fries"></label>
+                    <label class="item display-item" id="milkshake"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant fried-chicken ramen">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample2.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Spicy Like K-POP</h1>
+                <h3 class="rest-caption">"Authentic taste of K-POP food!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="fried-chicken"></label>
+                    <label class="item display-item" id="ramen"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant cake cookies coffee">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample3.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Sweet Tooth Co.</h1>
+                <h3 class="rest-caption">"Cakes and cookies like never before!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="cake"></label>
+                    <label class="item display-item" id="cookies"></label>
+                    <label class="item display-item" id="coffee"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star_half</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant cake pizza ramen">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample4.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">All Food Restaurant</h1>
+                <h3 class="rest-caption">"Get A to Z food here!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="cake"></label>
+                    <label class="item display-item" id="pizza"></label>
+                    <label class="item display-item" id="ramen"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant potato-fries fried-chicken fruit-juice">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample5.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Munchies and Drinks</h1>
+                <h3 class="rest-caption">"Simple food at its best!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="potato-fries"></label>
+                    <label class="item display-item" id="fried-chicken"></label>
+                    <label class="item display-item" id="fruit-juice"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant ice-cream fruit-juice milkshake">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample6.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Cool Like Summer</h1>
+                <h3 class="rest-caption">"Feels like it's summer, forever!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="ice-cream"></label>
+                    <label class="item display-item" id="fruit-juice"></label>
+                    <label class="item display-item" id="milkshake"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant pizza potato-fries burger">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample7.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Stuffed Crust Restaurant</h1>
+                <h3 class="rest-caption">"Our pizza is the freshest and tastiest!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="pizza"></label>
+                    <label class="item display-item" id="burger"></label>
+                    <label class="item display-item" id="potato-fries"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star_half</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant cookies donut coffee">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample8.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Browning Bakery</h1>
+                <h3 class="rest-caption">"Want some? Get some!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="cookies"></label>
+                    <label class="item display-item" id="donut"></label>
+                    <label class="item display-item" id="coffee"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant ice-cream donut">
+            <div class="rest-section rest-img-container"><img class="rest-img" src="sample9.jpg"></div>
+            <div class="rest-section rest-info">
+                <h1 class="rest-title">Quality Sugaries</h1>
+                <h3 class="rest-caption">"Ice-cream and donuts available!"</h3>
+                <div class="rest-display">
+                    <label class="item display-item" id="ice-cream"></label>
+                    <label class="item display-item" id="donut"></label>
+                    <div class="display-shelf"></div>
+                    <span class="rating">
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star</i>
+                        <i class="stars star1 material-icons">star_half</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                        <i class="stars star0 material-icons">star_border</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

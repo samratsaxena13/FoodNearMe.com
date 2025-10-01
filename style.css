@@ -1,0 +1,137 @@
+body {
+    background:
+        linear-gradient(180deg, #ffffff 120px, #f5deb3 240px, #cdba97 720px, #ffffff00 800px),
+        url("grid.png");
+    font-family: 'Montserrat';
+    justify-items: center;
+    text-align: center;
+    user-select: none;
+}
+body::-webkit-scrollbar {display: none;}
+
+#page-title {
+    letter-spacing: 8px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.title-small {font-size: smaller;}
+.title-smaller {font-size: large;}
+.food-hint {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main-shelf {
+    background-image: url("shelf.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 90px;
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+.display-shelf {
+    background-image: url("shelf.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+    height: 95px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+}
+.check {opacity: 0;}
+
+.item {
+    display: inline-block;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: bottom;
+    mask-repeat: no-repeat;
+}
+.main-item {
+    margin: -5px;
+    width: 128px; height: 128px;
+    transition: transform 400ms, background-color 400ms;
+    background-color: #000000;
+    background-blend-mode: luminosity;
+}
+.display-item {margin: 5px; width: 100px; height: 100px; transition: transform 500ms;}
+.display-item:hover {transform: scale(1.15); transition: transform 500ms;}
+
+.restaurant {
+    display: flex;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 200ms 400ms, opacity 200ms 400ms, margin-bottom 200ms 400ms;
+    transition-timing-function: ease-out;
+    margin: 0; opacity: 0;
+}
+.restaurant h1, h3 {margin: 0px;}
+.rest-caption {font-weight: 400; font-style: italic;}
+.rest-section {margin: 15px;}
+.rest-info {width: 450px;}
+
+.rest-img {border-radius: 10px; width: 100%; height: 100%;}
+.rest-img-container {
+    width: 420px;
+    height: 260px;
+    padding: 2px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+.rest-title {text-align: left;}
+.rest-caption {text-align: left;}
+.rest-display {margin-top: 10px;}
+
+.material-icons {font-size: 50px;}
+.star0 {text-shadow: 2px 2px 3px #808080; color: #708090;}
+.star1 {text-shadow: 3px 3px #ffd700, 6px 6px #ffffa4; color: #ffa500;}
+
+#burger {background-image: url("burger.png"); mask-image: url("burger.png");}
+#potato-fries {background-image: url("potato-fries.png"); mask-image: url("potato-fries.png");}
+#ramen {background-image: url("ramen.png"); mask-image: url("ramen.png");}
+#fried-chicken {background-image: url("fried-chicken.png"); mask-image: url("fried-chicken.png");}
+#pizza {background-image: url("pizza.png"); mask-image: url("pizza.png");}
+#cake {background-image: url("cake.png"); mask-image: url("cake.png");}
+#cookies {background-image: url("cookies.png"); mask-image: url("cookies.png");}
+#ice-cream {background-image: url("ice-cream.png"); mask-image: url("ice-cream.png");}
+#donut {background-image: url("donut.png"); mask-image: url("donut.png");}
+#fruit-juice {background-image: url("fruit-juice.png"); mask-image: url("fruit-juice.png");}
+#milkshake {background-image: url("milkshake.png"); mask-image: url("milkshake.png");}
+#coffee {background-image: url("coffee.png"); mask-image: url("coffee.png");}
+
+#C-burger:checked ~ #burger,
+#C-potato-fries:checked ~ #potato-fries,
+#C-ramen:checked ~ #ramen,
+#C-fried-chicken:checked ~ #fried-chicken,
+#C-pizza:checked ~ #pizza,
+#C-cake:checked ~ #cake,
+#C-cookies:checked ~ #cookies,
+#C-ice-cream:checked ~ #ice-cream,
+#C-donut:checked ~ #donut,
+#C-fruit-juice:checked ~ #fruit-juice,
+#C-milkshake:checked ~ #milkshake,
+#C-coffee:checked ~ #coffee {
+    transform: scale(1.15); 
+    background-color: transparent;
+}
+
+#C-burger:checked ~ .burger,
+#C-potato-fries:checked ~ .potato-fries,
+#C-ramen:checked ~ .ramen,
+#C-fried-chicken:checked ~ .fried-chicken,
+#C-pizza:checked ~ .pizza,
+#C-cake:checked ~ .cake,
+#C-cookies:checked ~ .cookies,
+#C-ice-cream:checked ~ .ice-cream,
+#C-donut:checked ~ .donut,
+#C-fruit-juice:checked ~ .fruit-juice,
+#C-milkshake:checked ~ .milkshake,
+#C-coffee:checked ~ .coffee {margin-bottom: 10px; opacity: 1; max-height: 300px;}
